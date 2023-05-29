@@ -10,7 +10,6 @@ The Maze_Master_QLearning Python script trains an agent using Q-Learning tables 
 - Allows users to view run history to determine the most successful run based on the number of steps taken (ignoring negative values, which indicate failures).
 - Generates videos of successful runs, which can be found in the frames folder. Users can manually convert these frames to videos using the final cell of the script.
 - Provides the option to change the frequency of image and video saves in the starting parameters section at the start of the script. Fewer saves result in faster trials.
-- Contact Btorrigino@gmail.com for assistance with the script.
 
 ## Usage
 
