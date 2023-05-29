@@ -1,4 +1,4 @@
-Details about this project and the theory behind it:
+Details about this project and the theory underpinning it:
 
 Q-Learning is a type of reinforcement learning, which is a way for a computer program, called an agent, to learn how to make decisions by trying things out and getting feedback. In the case of navigating a maze, the agent wants to find the way out. The agent starts at a specific location in the maze and can take different actions like moving up, down, left, or right.
 
