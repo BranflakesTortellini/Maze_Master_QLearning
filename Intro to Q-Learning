@@ -1,0 +1,19 @@
+Details about this project and the theory behind it:
+
+Q-Learning is a type of reinforcement learning, which is a way for a computer program, called an agent, to learn how to make decisions by trying things out and getting feedback. In the case of navigating a maze, the agent wants to find the way out. The agent starts at a specific location in the maze and can take different actions like moving up, down, left, or right.
+
+The agent learns through trial and error. It explores the maze by taking actions and observing the results. It receives feedback in the form of rewards. In the maze example, the agent might receive a positive reward when it reaches the exit and a negative reward for each step it takes. The goal of the agent is to maximize the total reward it receives over time.
+
+Q-Learning uses a Q-table to keep track of the expected rewards for each possible action in each possible state. Think of the Q-table as a big table that the agent consults to decide which action to take in each situation. Initially, the Q-table is empty, and the agent doesn't know what actions are best. But as it explores the maze and receives rewards, it updates the Q-table to reflect the rewards it expects to receive for each action in each state.
+
+Here's how the learning process works: When the agent takes an action in a certain state, it looks up the corresponding entry in the Q-table to find the expected reward for that action. The agent then updates its knowledge based on the observed reward and the rewards it expects to receive in the future. It adjusts the expected reward in the Q-table for that state-action pair to be closer to the observed reward. Over time, as the agent explores more and more of the maze, the Q-table gets updated, and the agent learns which actions are more likely to lead to higher rewards.
+
+The agent keeps exploring and updating the Q-table until it has learned a good strategy for navigating the maze. Eventually, it will have learned the best actions to take in each state to maximize the total reward. At this point, the agent has effectively memorized the route out of the maze.
+
+Now, let's talk about the differences between Q-Learning and neural network reinforcement learning. Q-Learning is a tabular method, meaning it uses a table (Q-table) to store and update the expected rewards. It doesn't require a neural network or any complicated mathematical functions. This makes it relatively easy to understand and implement. Q-Learning is particularly well-suited for problems with discrete states and actions, like navigating a maze.
+
+On the other hand, neural network reinforcement learning, often referred to as deep reinforcement learning, uses neural networks to approximate the Q-values. Neural networks are a type of machine learning model that can learn complex patterns and relationships in data. In deep reinforcement learning, the neural network takes the current state as input and outputs the Q-values for each possible action. The network is trained using techniques like backpropagation and gradient descent to optimize the Q-values and improve the agent's decision-making.
+
+Q-Learning has a long history in the field of reinforcement learning. It was introduced by Christopher Watkins in 1989 and is based on the concept of dynamic programming. Q-Learning is a model-free algorithm, meaning it doesn't require prior knowledge of the underlying environment. It learns by interacting with the environment and updating its Q-values based on the observed rewards. Q-Learning has been widely applied to various problems and remains a popular and effective method in the field of reinforcement learning.
+
+I hope this explanation provides a good overview of Q-Learning, its application to maze navigation, and its differences from neural network reinforcement learning. If you have any further questions or need additional clarification, please let me know!
